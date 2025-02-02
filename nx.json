@@ -16,7 +16,6 @@
       "{workspaceRoot}/go.work"
     ]
   },
-  "nxCloudId": "679f1d7394816d7ba46bf56e",
   "plugins": [
     {
       "plugin": "@nx/js/typescript",
