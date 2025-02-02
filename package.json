@@ -5,6 +5,7 @@
   "scripts": {},
   "private": true,
   "devDependencies": {
+    "@nx-go/nx-go": "^3.3.1",
     "@nx/js": "20.4.0",
     "@nx/react": "^20.4.0",
     "@nx/vite": "20.4.0",

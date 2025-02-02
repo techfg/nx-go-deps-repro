@@ -12,7 +12,8 @@
       "!{projectRoot}/src/test-setup.[jt]s"
     ],
     "sharedGlobals": [
-      "{workspaceRoot}/.github/workflows/ci.yml"
+      "{workspaceRoot}/.github/workflows/ci.yml",
+      "{workspaceRoot}/go.work"
     ]
   },
   "nxCloudId": "679f1d7394816d7ba46bf56e",
@@ -44,7 +45,8 @@
         "buildDepsTargetName": "build-deps",
         "watchDepsTargetName": "watch-deps"
       }
-    }
+    },
+    "@nx-go/nx-go"
   ],
   "generators": {
     "@nx/react": {
