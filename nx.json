@@ -12,9 +12,44 @@
       "!{projectRoot}/src/test-setup.[jt]s"
     ],
     "sharedGlobals": [
-      "{workspaceRoot}/.github/workflows/ci.yml",
-      "{workspaceRoot}/go.work"
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ],
+    "golang": [
+      "{projectRoot}/go.mod",
+      "{projectRoot}/go.sum",
+      "{projectRoot}/**/*.go",      
+      "{workspaceRoot}/go.work",
+      "{workspaceRoot}/go.work.sum"
     ]
+  },
+  "targetDefaults": {
+    "@nx-go/nx-go:build": {
+      "cache": true,
+      "inputs": [
+        "golang",
+        "^production",
+        "sharedGlobals"
+      ],
+      "outputs": [
+        "{options.outputPath}"
+      ]
+    },
+    "@nx-go/nx-go:test": {
+      "cache": true,
+      "inputs": [
+        "golang",
+        "^production",
+        "sharedGlobals"
+      ]
+    },
+    "@nx-go/nx-go:lint": {
+      "cache": true,
+      "inputs": [
+        "golang",
+        "^production",
+        "sharedGlobals"
+      ]
+    }
   },
   "plugins": [
     {
